@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Point TV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/logo1.png">
+</head>
+
+<body>
+  <section>
+    <div class="bannerVideo" id="slideShow">
+      <video src="./videos/NORWAY - A Time-Lapse Adventure 4K.mp4" autoplay muted loop class="active"></video>
+      <video src="./videos/football.mp4" autoplay muted loop></video>
+      <video src="./videos/auto.mp4" autoplay muted loop></video>
+      <video src="./videos/dance.mp4" autoplay muted loop></video>
+    </div>
+    <div class="container">
+      <header id="navbar">
+        <a href="#" class="logo">TELEFUSION</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Ambassadors</a></li>
+          <li><a href="#">Subscribe</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="menuIcon" onclick="toggleMenu();"></span>
+      </header>
+      <div class="content">
+        <div class="bannerText" id="slideShowText">
+          <div class="active">
+            <h2>Travel Chanels </h2>
+            <p>Are you ready to explore the world from the comfort of your own home? Look no further than the Travel
+              Channel!. But the Travel Channel is more than just a television network. Our website offers travel guides,
+              destination recommendations, and travel tips from experts and fellow travelers alike.</p>
+          </div>
+
+          <div>
+            <h2>Football Chanels</h2>
+            <p>Are you a football fanatic looking for your fix of the latest news, analysis, and highlights? Look no
+              further than the Football Channels! Our network is dedicated to providing in-depth coverage of football
+              from around the world, including the Premier League, La Liga, Serie A, Bundesliga, and more.</p>
+          </div>
+
+          <div>
+            <h2>Car Chanels</h2>
+            <p>Are you a car enthusiast looking for your fix of the latest news, reviews, and insights into the
+              automotive world? Look no further than the Cars Channel! If you're a car lover, the Cars Channel is a
+              must-watch. So tune in and join the millions of enthusiasts around the world who rely on us for their
+              daily dose of all things automotive!</p>
+          </div>
+
+          <div>
+            <h2>Music Chanels</h2>
+            <p>Are you a music lover looking for a one-stop-shop for all your favorite tunes, exclusive performances,
+              and insider access to your favorite artists? Look no further than the Music Channel! With exclusive access
+              to live performances, interviews with top artists, and behind-the-scenes looks at the music industry, the
+              Music Channel is your ultimate destination for everything music.</p>
+          </div>
+        </div>
+      </div>
+      <ul class="sci">
+        <li><a href="#"><img src="./images/icons8-facebook-48.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/icons8-instagram-48.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/icons8-telegram-logo-67.png" alt=""></a></li>
+      </ul>
+
+      <ul class="controls">
+        <li onclick="prevSlide(); prevSlideText();"><img src="./images/left.png" alt=""></li>
+        <li onclick="nextSlide(); nextSlideText();"><img src="./images/right.png" alt=""></li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
